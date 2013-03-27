@@ -31,7 +31,7 @@ app.configure(function(){
 
 app.configure('development', function(){
   app.use(express.errorHandler());
-  cloudinary.config({ cloud_name: 'YOURS', api_key: 'YOURS', api_secret: 'YOURS' });
+  cloudinary.config({ cloud_name: 'by', api_key: '123982555558898', api_secret: '_9K43LzR5DLC1w5yKHC5L0uVyBI' });
 });
 
 app.locals.api_key = cloudinary.config().api_key;
@@ -42,6 +42,10 @@ app.get('/', function(req, res, next){
     res.render('index', { images: items.resources, cloudinary: cloudinary });
   });
 });
+
+app.get('/theme', function(req,res){
+  res.render('theme')
+})
 
 app.post('/upload', function(req, res){
   var imageStream = fs.createReadStream(req.files.image.path, { encoding: 'binary' })
