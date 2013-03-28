@@ -1,1 +1,37 @@
-custom theme
+!!! 5
+html(lang='en')
+head
+  meta(charset='utf-8')
+  title gallery CMS
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(name='description', content='A calm, blue sky.')
+  meta(name='author', content='Thomas Park')
+  //if lt IE 9
+    script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+  link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+  link(href='stylesheets/bootstrap-responsive.min.css', rel='stylesheet')
+  link(href='stylesheets/font-awesome.min.css', rel='stylesheet')
+  link(href='stylesheets/bootswatch.css', rel='stylesheet')
+  body#top.preview(data-spy='scroll', data-target='.subnav', data-offset='80')
+
+
+    header#overview.jumbotron.subhead
+        .row
+            .span6
+              h1 Cerulean
+              p.lead A calm, blue sky.
+            .span6
+        .subnav
+          ul.nav.nav-pills
+            li
+              a(href='#typography') Typography
+            li
+              a(href='#navbar') Navbar
+            li
+              a(href='#buttons') Buttons
+            li
+              a(href='#forms') Forms
+            li
+              a(href='#tables') Tables
+            li
+              a(href='#miscellaneous') Miscellaneous
