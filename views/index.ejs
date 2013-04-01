@@ -12,4 +12,12 @@ ejs view
 
 </form>
 
+<script>
+  $('.cloudinary-fileupload').bind('fileuploadstart', function(e){
+    $('.preview').html('upload started')
+  })
+  $('.cloudinary-fileupload').bind('cloudinarydone', function(e){
+    $('.preview').html('upload finished')
+  })
+</script>
 </body></html>
