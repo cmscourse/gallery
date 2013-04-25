@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -31,7 +30,7 @@ app.configure(function(){
 
 app.configure('development', function(){
   app.use(express.errorHandler());
-  cloudinary.config({ cloud_name: 'by', api_key: '123982555558898', api_secret: '_9K43LzR5DLC1w5yKHC5L0uVyBI' });
+  cloudinary.config({ cloud_name: 'by', api_key: '', api_secret: '' });
 });
 
 app.locals.api_key = cloudinary.config().api_key;
